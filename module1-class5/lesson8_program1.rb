@@ -1,28 +1,28 @@
 # frozen_string_literal: false
 
-# trabalhando com classes
-# nomes de classes seguem o padao camel case ClassName
+# Dealing with classes
+# Class names must follow the sneak case style
 
-class Carro
+class Car
 end
 
-meu_carro = Carro.new
-puts "Mais um carro novo: #{meu_carro}"
+my_car = Car.new
+puts "A brand new car: #{my_car}"
 
-a = 'UMA STRING AQUI'
-b = a # b fez referencia para a, que faz referencia para a String
+a = 'UPPERCASE STRING'
+b = a # 'b' is just a reference for 'a'
 b.downcase!
 
 puts a
 
-# para realmente ter uma outra variavel com o valor de 'a' sem apontar para 'a' use o clone
+# we need to use .clone to have a new var/object not just a reference
 
-novo_a = 'TUDO CAIXA ALTA'
-novo_b = novo_a.clone
-puts novo_a.object_id
-puts novo_b.object_id
+new_a = 'ALL IN UPPERCASE HERE'
+new_b = new_a.clone
+puts new_a.object_id
+puts new_b.object_id
 
-novo_b.downcase!
+new_b.downcase!
 
-puts novo_a
-puts novo_b
+puts new_a
+puts new_b

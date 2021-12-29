@@ -1,20 +1,20 @@
 # frozen_string_literal: true
 
-# metodo construtor de classe: initialize
+# Constructor method
 
-# Classe de carros
-class Carro
-  attr_accessor :marca, :modelo
+# Class Car
+class Car
+  attr_accessor :brand, :model
 
-  def initialize(marca, modelo)
-    @marca = marca
-    @modelo = modelo
+  def initialize(brand, model)
+    @brand = brand
+    @model = model
   end
 
-  def descricao
-    "Maraca: #{@marca} | #{@modelo}"
+  def description
+    "Brand: #{@brand} | Model #{@model}"
   end
 end
 
-carro_ford_fiesta = Carro.new 'Ford', 'Fiesta'
-puts carro_ford_fiesta.descricao
+ford_fiesta = Car.new 'Ford', 'Fiesta'
+puts ford_fiesta.description

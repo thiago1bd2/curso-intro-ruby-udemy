@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-# Exemplos de uso de loop: while, for, each, while..do, etc
+# Example of the use of loop: while, for, each, while..do, etc
 
-parar = true
-while parar
-  puts 'parando...'
-  parar = false
+should_stop = true
+while should_stop
+  puts 'stopping...'
+  should_stop = false
 end
 
 a = [1, 2, 3, 4]
@@ -34,24 +34,24 @@ end
 # rubocop:enable Style/For
 
 # rubocop:disable Style/WordArray
-['maça', 'uva', 'pera', 'coco'].each do |fruta|
-  puts fruta
+['apple', 'grape', 'pear', 'coconut'].each do |fruit|
+  puts fruit
 end
 # rubocop:enable Style/WordArray
 
 puts
 
-frutas = %w[
-  banana maca pera uva abacaxi
+fruits = %w[
+  banana apple pear grape pineapple
 ]
 
-frutas.each do |f|
+fruits.each do |f|
   puts f
 end
 
 puts
 
-frutas.each { |fruta| puts fruta }
+fruits.each { |fruit| puts fruit }
 
 puts
 
@@ -59,10 +59,10 @@ puts
 
 puts
 
-meu_booleano = true
+my_precious_boolean = true
 
 loop do
   puts 'new line'
 
-  break if meu_booleano
+  break if my_precious_boolean
 end

@@ -1,25 +1,25 @@
 # frozen_string_literal: true
 
-# Exemplo de metodo de classe
+# Visibility of methods using the private keyword
 
-# Classe de automoveis
-class Automovel
-  def self.tipo_cambio
+# Automobiles Class
+class Automobiles
+  def self.gearbox_type
     puts 'manual'
   end
 
-  def acelerar
-    verifica_combustivel
-    puts 'Acelerando automovel...'
+  def speed_up
+    check_fuel_level
+    puts 'Speeding up...'
   end
 
   private
 
-  def verifica_combustivel
-    puts 'Verificando combustivevl...'
+  def check_fuel_level
+    puts 'Checking fuel level...'
   end
 end
 
-automovel = Automovel.new
-# automovel.verifica_combustivel
-automovel.acelerar
+automobile = Automobiles.new
+# automobile.check_fuel_level will fail cause the method is private
+automobile.speed_up

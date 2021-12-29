@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-# Exemplos de uso de case
+# Example of the use of case
 
-marca = 'tesla'
+brand = 'tesla'
 
-case marca
+case brand
 when 'tesla'
   puts 'TESLA'
 when 'ford'

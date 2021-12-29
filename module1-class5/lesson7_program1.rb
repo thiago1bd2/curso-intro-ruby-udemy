@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# usamos o gets para solicitar uma entrada via I/O padrao
-puts 'Entre com seu nome: '
-nome = gets
-puts "Ola #{nome}"
+# you must use gets to capture entries from the default I/O
+puts 'What is your name: '
+name = gets
+puts "Hi #{name}"

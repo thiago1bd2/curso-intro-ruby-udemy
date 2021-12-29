@@ -1,27 +1,27 @@
 # frozen_string_literal: true
 
-# Exemplo de metodo de classe
+# Example of a class method (static)
 
-# Classe de automoveis
-class Automovel
-  def self.tipo_cambio
+# Automobiles class
+class Automobiles
+  def self.gearbox_type
     puts 'manual'
   end
 
-  def acelerar
-    puts 'Acelerando automovel...'
+  def speed_up
+    puts 'Speeding up...'
   end
 end
 
-# Classe de carros
-class Carro < Automovel
-  def acelerar
-    puts 'Verificando componentes...'
+# Car class
+class Car < Automobiles
+  def speed_up
+    puts 'Checking components...'
     super
   end
 end
 
-carro = Carro.new
-carro.acelerar
+car = Car.new
+car.speed_up
 
-puts Automovel.tipo_cambio
+puts Automobiles.gearbox_type

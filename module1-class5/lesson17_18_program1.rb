@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# Exemplo de uso de if-else, elsif e unless
-# E de operadores logicos: && e || (and e or)
+# Example of the use of conditions
+# and logic operator && and ||
 
 a = 1
 b = 2
@@ -9,25 +9,28 @@ b = 2
 if a > b
   puts a
 elsif a == b
-  puts 'iguais'
+  puts 'equals'
 else
   puts b
 end
 
-# uma linha so (nao eh uma boa pratica, melhor usar o operador ternario)
+# rubocop:disable Style/OneLineConditional
+# prefer the ternary operator
 if a > b then puts 'a > b' else puts 'b > a' end
+# rubocop:enable Style/OneLineConditional
 
-# operador ternario
+# ternary operator
 a < b ? (puts 'a > b') : (puts 'b > a')
 
-# exemplo de unless
+# 'unless' example
 unless a > b then (puts b) end
 
-# uso de and (&&)
-
+# the use of AND and OR (&& and ||)
+# rubocop:disable Style/IfUnlessModifier
 if a < b && b > a
   puts 'b > a'
 end
+# rubocop:enable Style/IfUnlessModifier
 
 c = 10
 

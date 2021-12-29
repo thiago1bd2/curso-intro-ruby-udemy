@@ -1,26 +1,25 @@
 # frozen_string_literal: true
 
-# exemplo de variavel de instancia e como acessar atraves do objeto
-# com uso do attr_accessor utilizamos um atalho do Ruby, evitando escrever
-# getters e setters de forma manual
-# attr_accessor ainda possuem suas variante em nivel de protecao
-# attr_reader => somente leitura
-# attr_writer => somente escrita
+# Example of how to use instance variable
+# Using attr_accessor we don't need to write the getters and setters
+# Other possibilities are:
+# attr_reader => read only
+# attr_writer => write only
 
-# Class Carro
-class Carro
-  attr_accessor :marca, :modelo
+# Class Car
+class Car
+  attr_accessor :brand, :model
 
-  def velocidade_maxima
+  def max_speed
     250
   end
 
-  def descricao
-    "Marca #{@marca} | Modelo : #{@modelo} | Max. Speed #{velocidade_maxima}"
+  def description
+    "Brand #{@brand} | Model : #{@model} | Max. Speed #{max_speed}"
   end
 end
 
-carro = Carro.new
-carro.marca = 'Fiat'
-carro.modelo = 'Palio'
-puts carro.descricao
+car = Car.new
+car.brand = 'Fiat'
+car.model = 'Palio'
+puts car.description

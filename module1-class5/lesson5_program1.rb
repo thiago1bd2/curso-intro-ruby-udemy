@@ -1,40 +1,38 @@
 # frozen_string_literal: false
 
-# Comentario ruby
+# A ruby commentary
 
-# comentario de varias linhas
-# com outra linha
+# multi-line comment
+# another line
 
-# exemplo de variavel
-nome = 'Thiago'
-puts "Ola mundo para #{nome}"
+# var example
+name = 'James'
+puts "Hello to #{name}"
 
-nome = nil
+name = nil
 
-puts nome.nil?
+puts name.nil?
 
-outra_string = ' uma string com epacos '
-# antes do strip
-puts outra_string
-# aplica o metodo mas nao modifica a variavel
-puts outra_string.strip
-# depois do strip
-puts outra_string
-# chamado de metodo que modifica o objeto/variavel
-puts outra_string.strip!
-# depois do strip com !
-puts outra_string
+another_string = ' string with spaces '
+# before stripping
+puts another_string
+# applying the method but doesn't change the var
+puts another_string.strip
+# after stripping
+puts another_string
+# applying and changing the var
+puts another_string.strip!
+# after stripping
+puts another_string
 
-# escopo
+# scope
 
-preco = 10
+price = 10
 
-def muda_preco_local
-  preco = 50
-  puts preco
+def change_local_price
+  price = 50
+  puts price
 end
 
-# essa variavel preco altera esta dentro do escopo da funcao somente
-muda_preco_local
-# essa variavel preco esta num escopo acima da funcao
-puts preco
+# the price's scope is one level above the method
+puts price
