@@ -73,3 +73,11 @@ puts strange_string
 puts strange_string.strip.chars
 
 # rubocop:enable Style/StringLiterals
+
+# the use of symbol
+puts ":name is a #{:name.class}"
+
+# and we can convert it to string and vice-versa
+puts :name.to_s.class
+
+puts 'symbol'.to_sym.class
