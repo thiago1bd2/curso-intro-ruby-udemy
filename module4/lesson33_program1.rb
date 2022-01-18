@@ -5,7 +5,7 @@
 # we can declare a range using the .. and ...
 # with .. we are telling to ruby to consider the final value
 range1to5 = 1..5
-range1to5.map {|i| puts i }
+range1to5.map { |i| puts i }
 
 puts
 
@@ -19,10 +19,10 @@ range1to4.map { |i| puts i }
 puts
 
 range1to5.each do |i|
-  puts (i+1).to_s
+  puts (i + 1).to_s
 end
 
-puts 
+puts
 # alphabetical usage
 a_to_d_range = 'a'..'d'
 a_to_d_range.map { |a| puts a }

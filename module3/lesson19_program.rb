@@ -12,5 +12,5 @@ when 'ford'
 when 'fiat'
   puts 'FIAT'
 else
-  puts 'Sem Marca!'
+  puts 'No brand found!'
 end

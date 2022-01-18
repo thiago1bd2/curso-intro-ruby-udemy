@@ -7,8 +7,8 @@ def some_method(arg1, arg2 = :arg2, arg3 = :arg3)
 end
 
 some_method(1)
-some_method(100,:argx)
-some_method(10,:argx, :argy)
+some_method(100, :argx)
+some_method(10, :argx, :argy)
 
 # passing multi params in argument
 

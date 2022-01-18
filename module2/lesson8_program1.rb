@@ -15,7 +15,7 @@ b.downcase!
 
 puts a
 
-# we need to use .clone to have a new var/object not just a reference
+# we need to use .clone to have a new var/object, not just a reference
 
 new_a = 'ALL IN UPPERCASE HERE'
 new_b = new_a.clone
